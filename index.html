@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take Control of Your Wealth with Neha Nagar – Your Personal Finance Guide 360°</title>
+  <meta name="description" content="Neha Nagar – Personal finance creator and consultant. Proven investment strategy, YouTube channel, trusted advisor, Forbes India Top 100 Digital Stars.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary: #10b981;
+      --secondary: #18222f;
+      --bg: #f7fafc;
+      --white: #fff;
+      --accent: #0076FF;
+      --border-radius: 16px;
+    }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: #222;
+    }
+    .nav {
+      background: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav a.cta-btn {
+      background-color: var(--primary);
+      color: var(--white) !important;
+      padding: 0.6em 1.3em;
+      border-radius: var(--border-radius);
+      font-weight: bold;
+      margin-left: 0.5rem;
+      transition: background 0.2s;
+    }
+    .nav a.cta-btn:hover { background: #0e9e74; }
+    .hero {
+      background: linear-gradient(115deg,#10b981 35%,#7dd3fc 100%);
+      color: var(--white);
+      padding: 36px 0 64px 0;
+      text-align: center;
+    }
+    .hero .img-box {
+      margin: 0 auto 18px;
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 0 0 6px #10b98155;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero img {
+      width: 110%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      margin: 0.4em 0 0.3em;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin: 0.2em 0 1.4em;
+      color: #ebf8ff;
+    }
+    .hero .feature-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.7em;
+      flex-wrap: wrap;
+    }
+    .feature-list span {
+      background: #fff3;
+      border-radius: 20px;
+      padding: 0.5em 1em;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+    .feature-list span:before {
+      content: "✔";
+      margin-right: 0.5em;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 1px 2px #10b981cc;
+    }
+    .hero .cta-main {
+      display: inline-block;
+      font-size: 1.13rem;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.95em 2.3em;
+      border-radius: var(--border-radius);
+      font-weight: bold;
+      margin-top: 10px;
+      box-shadow: 0 3px 16px #0076ff55;
+      transition: background 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .hero .cta-main:hover { background: #035cc2; }
+
+    .section {
+      max-width: 950px;
+      margin: 2.3rem auto;
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 16px #0001;
+      padding: 2.2rem 1.5rem;
+    }
+    .section h2 {
+      font-size: 1.6rem;
+      margin: 0 0 1rem 0;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .section p, .section ul {
+      font-size: 1.12rem;
+      margin-bottom: 1em;
+    }
+    .section ul {
+      padding-left: 1.3em;
+    }
+    .section ul li {
+      margin-bottom: 0.5em;
+      list-style: disc inside;
+      line-height: 1.6;
+    }
+    .social-proof {
+      display: flex; flex-wrap: wrap; gap: 2em; align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 1.5em;
+    }
+    .social-proof .award-list {
+      flex: 3;
+    }
+    .award-list ul {
+      padding-left: 1em;
+    }
+    .award-list ul li {
+      margin-bottom: 0.6em;
+      list-style: none;
+      position: relative;
+    }
+    .award-list ul li:before {
+      content: "🏆";
+      margin-right: 0.55em;
+    }
+    .social-proof .badges {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2em;
+      align-items: center;
+    }
+    .badges img {
+      max-width: 110px;
+      max-height: 110px;
+      border-radius: 14px;
+      background: #f3f4f6;
+      box-shadow: 0 2px 8px #0001;
+    }
+    .testimonials {
+      margin-top: 20px;
+      background: #f1f9f6;
+      border-radius: var(--border-radius);
+      padding: 1.3em 1em;
+      box-shadow: 0 1px 8px #10b98113;
+    }
+    .testimonials ul {
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .testimonials li {
+      margin-bottom: 1.35em;
+      font-size: 1.1em;
+    }
+    .author {
+      display: block; margin-top: 0.25em; color: #636; font-size: 0.95em; font-style: italic;
+    }
+    .youtube-showcase ul {
+      margin-bottom: 1.1em;
+      list-style: disc inside;
+    }
+    .youtube-links {
+      display: flex; gap: 1em; flex-wrap: wrap;
+      margin-bottom: 1.2em;
+    }
+    .youtube-links a {
+      background: #e6f3ff;
+      border: 1px solid #b2d4ef;
+      color: #0366d6;
+      border-radius: 9px;
+      padding: 0.6em 1.1em;
+      text-decoration: none;
+      transition: background 0.18s;
+      font-size: 1em;
+    }
+    .youtube-links a:hover { background: #cddffe; }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+    .video-card {
+      background: #f8f9fa;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+    .video-info {
+      padding: 1rem;
+    }
+    .video-info h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 1.1rem;
+    }
+    .video-info p {
+      margin: 0;
+      font-size: 0.97rem;
+      color: #555;
+    }
+    .social-handles {
+      display: flex;
+      gap: 1.2em;
+      align-items: center;
+      padding: 0.75em 0 0.4em;
+      font-size: 1.22em;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .social-handles a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #161e2e;
+      font-weight: 500;
+      transition: color 0.2s;
+      gap: 0.45em;
+    }
+    .social-handles a:hover { color: var(--primary);}
+    .ico {
+      font-size: 1.15em;
+      margin-right: 0.02em;
+    }
+    .cta-final {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .cta-final h2 {
+      color: var(--secondary);
+      margin-bottom: 0.5em;
+    }
+    .cta-final p {
+      margin: 0 0 1.75em;
+      font-size: 1.14rem;
+      color: #166534;
+    }
+    .cta-btns {
+      display: flex;
+      gap: 1.3em;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.5em;
+    }
+    .cta-btns .cta-main {
+      background: var(--primary);
+      color: var(--white);
+      font-size: 1.09rem;
+      padding: 0.9em 2.1em;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 3px 9px #10b98133;
+      transition: background 0.19s;
+    }
+    .cta-btns .cta-main:hover { background: #09875a; }
+    .footer {
+      text-align: center;
+      font-size: 1em;
+      padding: 1.3em 0;
+      color: #878f99;
+      background: #f6fcf8;
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 900px) {
+      .section { padding: 1.4rem 0.9rem;}
+      .social-proof { flex-direction: column; gap: 1.3em;}
+    }
+    @media (max-width:650px) {
+      .nav { flex-direction: column; padding: 1em;}
+      .hero h1 { font-size: 1.8rem;}
+      .video-grid { grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <span style="font-weight:bold; color: var(--primary); font-size:1.21rem;">Neha Nagar</span>
+    <div>
+      <a href="#about">About Neha</a>
+      <a href="#services">Services</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#socialproof">Testimonials</a>
+      <a href="#cta-final">Contact</a>
+      <a href="#cta-final" class="cta-btn">Start Your Journey</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="img-box">
+      <img src="images/Why-Neha-Nagar.jpg" alt="Neha Nagar profile image" loading="lazy">
+    </div>
+    <h1>Your Wealth. Your Way.<br>Let’s build a financial future that works for you.</h1>
+    <p>Proven investment strategies | Personalized planning<br>Trusted by 2M+ finance community</p>
+    <div class="feature-list">
+      <span>Investment Strategy</span>
+      <span>Financial Planning</span>
+      <span>10,000+ subscribers</span>
+    </div>
+    <a href="#cta-final" class="cta-main">Start Your Journey →</a>
+  </section>
+
+  <!-- About Neha Section -->
+  <section class="section about-me" id="about">
+    <h2>Why Neha Nagar?</h2>
+    <p>
+      Founder – After extensive experience in finance, I launched Taxationhelp.in in 2019 – a platform serving the legal and financial compliance needs of startups and established businesses, plus tailored solutions for individuals.
+    </p>
+    <p>
+      Content Creator – Since 2020, I’ve committed to making finance simple for everyone. My educational videos now reach a community of 2 Million+ subscribers and followers.
+    </p>
+    <p>
+      Active Investor – I invest in stocks, mutual funds, real estate, and bonds – helping clients secure their present and future wealth through smart, inflation-beating strategies.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <h2>Comprehensive Services</h2>
+    <ul>
+      <li>Investment Strategy Consultation</li>
+      <li>Holistic Financial Planning</li>
+      <li>Retirement Planning</li>
+      <li>Tax-Efficient Wealth Building</li>
+      <li>1-on-1 Coaching &amp; Webinars</li>
+    </ul>
+  </section>
+  
+  <!-- Social Proof & Recognition Section -->
+  <section class="section" id="socialproof">
+    <h2>Social Proof & Recognition</h2>
+    <div class="social-proof">
+      <div class="award-list">
+        <ul>
+          <li>Featured on cover page of <b>FORBES India</b> as Top 100 Digital Stars (2022)</li>
+          <li>Ranked #5 Most Followed Woman Influencer (Hurun, 2025)</li>
+          <li>YouTube Silver Creator Award</li>
+          <li>4.9⭐ on Google Reviews</li>
+        </ul>
+      </div>
+      <div class="badges">
+        <img src="images/As-seen-on-Awards1.jpg" alt="Forbes Cover Award" loading="lazy">
+        <img src="images/As-seen-on-Awards2.jpg" alt="Hurun Influencer Award" loading="lazy">
+      </div>
+    </div>
+    <div class="testimonials">
+      <ul>
+        <li>
+          <q>Neha helped me understand my financial goals clearly and take action. Her strategies made a huge difference in just 6 months!</q>
+          <span class="author">— Rahul M., Software Engineer</span>
+        </li>
+        <li>
+          <q>Down-to-earth and easy to follow. Neha’s advice got me out of debt and into investing smartly.</q>
+          <span class="author">— Neha S., Small Business Owner</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- YouTube Showcase -->
+  <section class="section youtube-showcase" id="youtube">
+    <h2>Popular Finance Videos</h2>
+    <ul>
+      <li>How to start investing in your 30s</li>
+      <li>Top 5 financial mistakes to avoid</li>
+      <li>500 Videos to make you financially literate</li>
+    </ul>
+    <div class="video-grid">
+      <!-- Watch Short 1 -->
+      <div class="video-card">
+        <a href="https://www.youtube.com/shorts/6cF3SWsOhUo?themeRefresh=1" target="_blank">
+          <img
+            src="https://img.youtube.com/vi/6cF3SWsOhUo/hqdefault.jpg"
+            alt="How to start investing in your 30s thumbnail"
+            style="width:100%; display:block; border-radius:12px;"
+            loading="lazy"
+          >
+        </a>
+        <div class="video-info">
+          <h3>How to start investing in your 30s</h3>
+          <p>Essential investment strategies for beginners in their 30s</p>
+        </div>
+      </div>
+      <!-- Watch Short 2 -->
+      <div class="video-card">
+        <a href="https://www.youtube.com/shorts/_UmCbq2OVjw" target="_blank">
+          <img
+            src="https://img.youtube.com/vi/_UmCbq2OVjw/hqdefault.jpg"
+            alt="Top 5 financial mistakes to avoid thumbnail"
+            style="width:100%; display:block; border-radius:12px;"
+            loading="lazy"
+          >
+        </a>
+        <div class="video-info">
+          <h3>Top 5 financial mistakes to avoid</h3>
+          <p>Common financial pitfalls and how to avoid them</p>
+        </div>
+      </div>
+      <!-- Watch Full Video -->
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=stjNELjDxHM" target="_blank">
+          <img
+            src="https://img.youtube.com/vi/stjNELjDxHM/hqdefault.jpg"
+            alt="500 Videos to make you financially literate thumbnail"
+            style="width:100%; display:block; border-radius:12px;"
+            loading="lazy"
+          >
+        </a>
+        <div class="video-info">
+          <h3>500 Videos to make you financially literate</h3>
+          <p>Complete financial education in one comprehensive series</p>
+        </div>
+      </div>
+    </div>
+    <div class="social-handles">
+      <a href="https://www.youtube.com/@nehanagar" target="_blank"><span class="ico">▶</span> YouTube</a>
+      <a href="https://www.instagram.com/iamnehanagar/" target="_blank"><span class="ico">📸</span> Instagram</a>
+      <a href="https://www.linkedin.com/in/iamnehanagar/" target="_blank"><span class="ico">💼</span> LinkedIn</a>
+      <a href="https://twitter.com/nehanagarr" target="_blank"><span class="ico">🐦</span> Twitter</a>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-final" id="cta-final">
+    <h2>Ready to build your wealth and future-proof your finances?</h2>
+    <p>Join 2M+ learners and investors subscribed to my weekly financial insights.</p>
+    <div class="cta-btns">
+      <a class="cta-main" href="mailto:contact@taxationhelp.in?subject=Discovery%20Call%20with%20Neha">Book a Free Discovery Call</a>
+      <a class="cta-main" href="https://www.youtube.com/channel/UCzUgCORf79EjqlNHmGRHFkA?sub_confirmation=1" target="_blank">Subscribe to YouTube</a>
+      <a class="cta-main" href="https://www.taxationhelp.in/newsletter/" target="_blank">Join the Insider Newsletter</a>
+    </div>
+    <div style="margin-top:1.09em; font-size:1.1em;">
+      <span>Email:</span> <a href="mailto:contact@taxationhelp.in">contact@taxationhelp.in</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Neha Nagar | Financial Consulting &amp; Education | All Rights Reserved.<br>
+    India | 388K+ YouTube Subscribers | 12M+ views
+  </footer>
+</body>
+</html>
